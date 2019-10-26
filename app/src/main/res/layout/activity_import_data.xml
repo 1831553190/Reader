@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:id="@+id/layoutProcess"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        
+        <TextView
+                android:id="@+id/searching"
+                android:text="正在查找..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    
+   <androidx.recyclerview.widget.RecyclerView
+       app:fastScrollEnabled="true"
+       app:fastScrollVerticalThumbDrawable="@drawable/drawable_thumb"
+       app:fastScrollVerticalTrackDrawable="@drawable/drawable_line"
+       app:fastScrollHorizontalThumbDrawable="@drawable/drawable_thumb"
+       app:fastScrollHorizontalTrackDrawable="@drawable/drawable_line   "
+           android:focusable="true"
+           android:id="@+id/data_recyclerview"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+    
+</LinearLayout>

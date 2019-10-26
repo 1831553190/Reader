@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="147dp">
+
+        <RelativeLayout
+            android:id="@+id/imgL"
+            android:layout_width="104dp"
+            android:layout_height="147dp">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="104dp"
+            android:layout_height="147dp"
+            android:src="@mipmap/icon_book1" />
+            <TextView
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:text="暂无封面"
+                android:background="#66666666"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/dialigTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/imgL"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+    <View
+        android:background="#666"
+        style="?attr/dividerHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/dialog_bookPath"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dialog_md5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

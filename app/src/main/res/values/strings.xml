@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">阅读</string>
+    <string name="inputstr">0123456789abcdefghijklmnopqrstuvwxyz!@#$%^*()_-=+|{}[]</string>
+    <string name="search">搜索</string>
+    <string name="editUserInfo">编辑个人信息</string>
+    <string name="local_book">本地书籍</string>
+
+    <string name="behavior_sample_header">com.example.myapplication.behavior.EditTextBehavior</string>
+    <string name="behavior_recyclerview">com.example.myapplication.behavior.RecyclerViewBehavior</string>
+    <string name="behavior_fabbtn">com.example.myapplication.behavior.FABBehavior</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/headerImg"
+            android:layout_width="80dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_person_black_48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/userNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="未登录"
+                android:layout_marginLeft="8dp"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/user_login"
+            style="?buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginRight="10dp"
+            android:text="登录" />
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/layout_settings"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                app:srcCompat="@drawable/ic_settings_black_24dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:textSize="18sp"
+                android:text="设置"
+                android:paddingLeft="72dp"
+                android:paddingBottom="28dp"
+                android:paddingTop="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_centerVertical="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+        </RelativeLayout>
+</RelativeLayout>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:id="@+id/myReadView"-->
+        <!--android:clickable="true"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:background="?attr/selectableItemBackground"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:text="测试布局" />-->
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

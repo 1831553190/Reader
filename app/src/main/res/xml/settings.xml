@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="sort_style"
+        android:title="排序"
+        android:entries="@array/list_order"
+        android:entryValues="@array/list_order_val"
+        android:summary="更改书架书籍排序方式"
+        android:icon="@drawable/ic_sort_black_24dp"/>
+</PreferenceScreen>
